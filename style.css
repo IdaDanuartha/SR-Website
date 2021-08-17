@@ -1,0 +1,136 @@
+/* My Font */
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    height: 2000px;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.navbar-brand{
+    font-family: 'Viga', sans-serif;
+    font-size: 25px;
+    transition-property: transform;
+    transition: 0.3s;
+}
+
+.navbar-brand span{
+    color: rgb(255, 56, 56);
+}
+
+.navbar-brand:hover {
+    transform: scale(1.07);
+}
+
+.navbar .container form {
+    margin-left: 25%;
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.jumbotron{
+    background-image: url(img/Rubik2.jpg);
+    background-size: cover;
+    height: 600px;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding-top: 100px;
+}
+
+.jumbotron .container {
+    margin-left: 40px;
+}
+
+.jumbotron .container .display-4 {
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  line-height: 70px;
+  color: rgb(173, 173, 173);
+}
+
+.jumbotron .container .btn {
+    margin-left: 180px;
+    margin-top: 35px;
+}
+
+/* Responsive style */
+@media (max-width: 1024px) {
+    .jumbotron {
+        padding-top: 100px;
+    }
+
+    .navbar .container {
+        margin-left: 0;
+
+    }
+
+    
+}
+
+@media (max-width: 768px) {
+    .jumbotron .container .display-4 {
+        font-size: 38px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        line-height: 50px;
+        padding-top: 30px;
+      }
+      
+      .jumbotron .container .display-4 span {
+          padding-left: 20px;
+      }
+      
+      .jumbotron .container .lead {
+          padding-left: 45px;
+          font-size: 18px;
+      }
+
+      .navbar .container form {
+        margin-left: 0;
+        width: 300px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .jumbotron .container .btn {
+        margin-left: 140px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .jumbotron .container {
+        margin-left: 10px;
+        margin-top: -40px;
+    }
+    .jumbotron .container .display-4 {
+        font-size: 26px;
+        line-height: 40px;
+        padding-top: 50px;
+    }
+      
+    .jumbotron .container .lead {
+          font-size: 12px;
+          padding-left: 40px;
+      }
+
+    .navbar .container form {
+        margin-left: 0;
+    }
+
+    .jumbotron .container .btn {
+        margin-left: 105px;
+    }
+
+    .jumbotron .container .btn {
+        margin-left: 90px;
+        margin-top: 35px;
+    }
+}
