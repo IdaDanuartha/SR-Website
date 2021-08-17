@@ -2,5 +2,3 @@
 repository for my project website
 
 Website masih dalam proses!
-
-Terima Kasih
