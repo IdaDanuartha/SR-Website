@@ -22,14 +22,18 @@ body {
     transform: scale(1.07);
 }
 
+.navbar .container {
+    margin-left: 0;
+}
 .navbar .container form {
-    margin-left: 25%;
+    margin-left: 30%;
     width: 500px;
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
 }
 
+.navbar-nav {
+    width: 600px;
+}
 /* akhir navbar */
 
 /* jumbotron */
@@ -63,6 +67,15 @@ body {
 
 
 /* Responsive style */
+@media (max-width: 1124px) {
+    .navbar-nav {
+        width: 550px;
+    }
+
+    .navbar .container form {
+        margin-left: 25%;
+    }
+}
 @media (max-width: 1024px) {
     .jumbotron {
         padding-top: 100px;
@@ -73,7 +86,9 @@ body {
 
     }
 
-    
+    .navbar .container form {
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 768px) {
@@ -93,13 +108,6 @@ body {
           padding-left: 45px;
           font-size: 18px;
       }
-
-      .navbar .container form {
-        margin-left: 0;
-        width: 300px;
-        display: flex;
-        flex-direction: row;
-    }
 
     .jumbotron .container .btn {
         margin-left: 140px;
@@ -125,6 +133,7 @@ body {
 
     .navbar .container form {
         margin-left: 0;
+        width: 100px;
     }
 
     .jumbotron .container .btn {
