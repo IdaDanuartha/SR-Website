@@ -4,144 +4,50 @@
 
 body {
     height: 2000px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #eee;
 }
 
 /* navbar */
-.navbar {
+
+ .navbar {
     width: 100%;
+    z-index: 2;
 }
 
-.navbar-brand{
-    font-family: 'Viga', sans-serif;
-    font-size: 25px;
-    transition-property: transform;
-    transition: 0.3s;
+.navbar .nav-item {
+    padding-right: 10px;
 }
 
-.navbar-brand:hover {
-    transform: scale(1.07);
+.navbar .nav-item:hover {
+    border-bottom: 1px solid rgb(135, 135, 255);
 }
 
-.navbar .container {
-    margin-left: 0;
-}
-.navbar .container form {
-    margin-left: 30%;
-    width: 500px;
-    display: flex;
-}
-
-.navbar-nav {
-    width: 600px;
-}
 /* akhir navbar */
 
-/* jumbotron */
-.jumbotron{
-    background-image: url(img/Rubik2.jpg);
-    background-size: cover;
+
+/* carousel */
+
+.carousel-item {
     height: 600px;
-    background-position: center;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    padding-top: 100px;
+    bottom: 70px;
 }
 
-.jumbotron .container {
-    margin-left: 40px;
-}
+/* akhir carousel */
 
-.jumbotron .container .display-4 {
-  font-size: 50px;
-  font-weight: 600;
-  letter-spacing: 1.5px;
-  line-height: 70px;
-  color: rgb(173, 173, 173);
-}
+/* artikel */
 
-.jumbotron .container .btn {
-    margin-left: 180px;
-    margin-top: 35px;
-}
-/* akhir jumbotron */
 
+
+/* akhir artikel */
 
 /* Responsive style */
-@media (max-width: 1124px) {
-    .navbar-nav {
-        width: 550px;
-    }
 
-    .navbar .container form {
-        margin-left: 25%;
+@media (max-width: 992px) {
+    .carousel-item {
+        height: auto;
+        bottom: -60px;
     }
-}
-@media (max-width: 1024px) {
-    .jumbotron {
-        padding-top: 100px;
-    }
-
-    .navbar .container {
-        margin-left: 0;
-
-    }
-
-    .navbar .container form {
-        margin-left: 0;
-    }
-}
-
-@media (max-width: 768px) {
-    .jumbotron .container .display-4 {
-        font-size: 38px;
-        font-weight: 600;
-        letter-spacing: 1.5px;
-        line-height: 50px;
-        padding-top: 30px;
-      }
-      
-      .jumbotron .container .display-4 span {
-          padding-left: 20px;
-      }
-      
-      .jumbotron .container .lead {
-          padding-left: 45px;
-          font-size: 18px;
-      }
-
-    .jumbotron .container .btn {
-        margin-left: 140px;
-    }
-
-}
-
-@media (max-width: 480px) {
-    .jumbotron .container {
-        margin-left: 10px;
-        margin-top: -40px;
-    }
-    .jumbotron .container .display-4 {
-        font-size: 26px;
-        line-height: 40px;
-        padding-top: 50px;
-    }
-      
-    .jumbotron .container .lead {
-          font-size: 12px;
-          padding-left: 40px;
-      }
-
-    .navbar .container form {
-        margin-left: 0;
-        width: 100px;
-    }
-
-    .jumbotron .container .btn {
-        margin-left: 105px;
-    }
-
-    .jumbotron .container .btn {
-        margin-left: 90px;
-        margin-top: 35px;
-    }
+    
 }
