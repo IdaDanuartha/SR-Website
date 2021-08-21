@@ -28,8 +28,16 @@
     
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item artikel">
-            <a class="nav-link" href="#"><i class="far fa-newspaper"></i> Artikel</a>
+          <li class="nav-item dropdown tutorial">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="far fa-newspaper"></i> Artikel
+            </a>
+            <div class="dropdown-menu position-absolute" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Rubik</a>
+              <a class="dropdown-item" href="#">Random</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Lihat Selengkapnya</a>
+            </div>
           </li>
           <li class="nav-item dropdown tutorial">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -47,11 +55,11 @@
             <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">🏆 Kompetisi</a>
           </li>
           <li class="nav-item tentang">
-            <a class="nav-link" href="#"><i class="fas fa-user"></i> Tentang</a>
+            <a class="nav-link" href="#"><i class="fas fa-info-circle text-info"></i> Info SeRu</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Kata kunci" aria-label="Search">
+          <input class="form-control mr-sm-2" type="search" placeholder="Kata kunci... " aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cari</button>
         </form>
       </div>
@@ -85,7 +93,7 @@
 
    <!-- Akhir carousel -->
 
-    <h1 class="bg-info mt-5 text-center">INFO TERBARU!</h1>
+    <h1 class="bg-info mt-5  text-center">POSTINGAN TERBARU!</h1>
 
    <!-- Artikel -->
 
@@ -97,25 +105,29 @@
         </div>
       </div>
 
-      <div class="card mb-3 text-white bg-dark" style="max-width: 540px;">
-         <div class="row no-gutters">
-           <div class="col-md-4">
-             <img src="img/my-logo.png" alt="...">
-           </div>
-           <div class="col-md-8 pl-2">
-             <div class="card-body">
-               <h5 class="card-title">Pemain Rubik Terbaik di Dunia</h5>
-               <p class="card-text">Feliks zemdegs adalah pemain rubik terbaik di dunia karena dia adalah...</p>
-               <p class="card-text"><small class="text-muted">17 Agustus 2021</small></p>
-             </div>
-           </div>
-         </div>
-       </div>
-
+      <div class="row">
+        <a href="">
+        <div class="card mb-3 text-white bg-dark mr-5" style="max-width: 540px;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="img/feliksZ.jpg" alt="...">
+            </div>
+            <div class="col-md-8 pl-2">
+              <div class="card-body">
+                <h5 class="card-title">Pemain Rubik Terbaik di Dunia</h5>
+                <p class="card-text">Feliks zemdegs adalah pemain rubik terbaik di dunia karena dia adalah...</p>
+                <p class="card-text"><small class="text-muted">17 Agustus 2021</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+       </a>
+        
+       <a href="">
        <div class="card mb-3 text-white bg-dark" style="max-width: 540px;">
          <div class="row no-gutters">
            <div class="col-md-4">
-             <img src="img/my-logo.png" alt="...">
+             <img src="img/feliksZ.jpg" alt="...">
            </div>
            <div class="col-md-8 pl-2">
              <div class="card-body">
@@ -126,11 +138,32 @@
            </div>
          </div>
        </div>
+      </div>
+     </a>
 
+      <div class="row">
+        <a href="">
+        <div class="card mb-3 text-white bg-dark mr-5" style="max-width: 540px;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="img/feliksZ.jpg" alt="...">
+            </div>
+            <div class="col-md-8 pl-2">
+              <div class="card-body">
+                <h5 class="card-title">Pemain Rubik Terbaik di Dunia</h5>
+                <p class="card-text">Feliks zemdegs adalah pemain rubik terbaik di dunia karena dia adalah...</p>
+                <p class="card-text"><small class="text-muted">17 Agustus 2021</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+        
+      <a href="">
        <div class="card mb-3 text-white bg-dark" style="max-width: 540px;">
          <div class="row no-gutters">
            <div class="col-md-4">
-             <img src="img/my-logo.png" alt="...">
+             <img src="img/feliksZ.jpg" alt="...">
            </div>
            <div class="col-md-8 pl-2">
              <div class="card-body">
@@ -141,21 +174,8 @@
            </div>
          </div>
        </div>
-
-       <div class="card mb-3 text-white bg-dark" style="max-width: 540px;">
-         <div class="row no-gutters">
-           <div class="col-md-4">
-             <img src="img/my-logo.png" alt="...">
-           </div>
-           <div class="col-md-8 pl-2">
-             <div class="card-body">
-               <h5 class="card-title">Pemain Rubik Terbaik di Dunia</h5>
-               <p class="card-text">Feliks zemdegs adalah pemain rubik terbaik di dunia karena dia adalah...</p>
-               <p class="card-text"><small class="text-muted">17 Agustus 2021</small></p>
-             </div>
-           </div>
-         </div>
-       </div>
+      </a>
+      </div>
       </div>
 
 
