@@ -21,8 +21,13 @@ body {
     padding-right: 10px;
 }
 
-.navbar .nav-item:hover {
-    border-bottom: 1px solid rgb(135, 135, 255);
+.navbar .nav-item:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid #0b63DC;
+    color: rgb(231, 231, 231);
+    width: 30%;
+    margin: auto;
 }
 
 /* akhir navbar */
@@ -41,7 +46,7 @@ body {
 
 .container {
     width: 90%;
-    margin-top: 150px;
+    margin: 200px auto;
     border-radius: 10px;
 }
 
@@ -49,10 +54,6 @@ body {
     text-decoration: none;
 }
 
-.container a h5:hover {
-    color: rgb(231, 231, 231);
-    border-bottom: 1px solid rgb(76, 76, 228);
-}
 .container hr {
     border-bottom: 1px solid black;
     width: 180px;
@@ -65,6 +66,21 @@ body {
 
 .container .row .card {
     height: auto;
+    margin: 10px;
+    transition-property: transform;
+    transition: 0.3s;
+}
+
+.container .row .card:hover {
+    transform: scale(1.025);
+}
+
+.card-title:hover {
+    color: rgb(95, 95, 255);
+}
+
+.card-text {
+    font-size: 14px;
 }
 
 .container .row img {
@@ -74,6 +90,59 @@ body {
 
 /* akhir artikel */
 
+
+/* tutorial */
+
+
+
+/* Akhir tutorial */
+
+
+/* footer */
+footer {
+    color: white;
+    background-color: #333;
+}
+
+.bottom-navbar {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.bottom-navbar span {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.bottom-navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.bottom-navbar a:hover {
+    color: rgb(160, 157, 157);
+}
+.sosmed a {
+    text-decoration: none;
+}
+
+.sosmed {
+    padding: 40px;
+}
+
+.copyright {
+    padding: 5px;
+    background-color: #222;
+}
+.copyright span {
+    color: rgb(248, 0, 0);
+}
+
+/* Akhir footer */
+
+
+
 /* Responsive style */
 
 @media (max-width: 992px) {
@@ -82,7 +151,20 @@ body {
         bottom: -60px;
     }
     
-    .navbar .nav-item:hover {
-        border-bottom: none;
+    .navbar .nav-item:hover::after {
+        border: none;
     }
+
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .row .card {
+        margin-right: 0;
+    }
+
+    
 }
