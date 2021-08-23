@@ -74,6 +74,28 @@ body {
 
 /* akhir artikel, tutorial*/
 
+/* contact */
+.container-contact {
+    width: 80%;
+    margin: 120px auto 100px auto;
+    border-radius: 10px;
+}
+
+.navbar-contact {
+    top: 0;
+    left: 0;
+    right: 0;
+} 
+
+.contact a {
+    text-decoration: none;
+}
+
+.contact .list-group-item {
+    font-size: 13px;
+}
+
+/* akhir contact */
 
 /* footer */
 footer {
