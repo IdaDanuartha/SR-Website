@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #eee;
@@ -28,6 +32,11 @@ body {
     margin: auto;
 }
 
+.navbar .form-inline .form-control {
+    margin-right: 5px;
+    width: 200px;
+}
+
 /* akhir navbar */
 
 
@@ -40,60 +49,30 @@ body {
 
 /* akhir carousel */
 
-/* artikel */
 
-/* .container {
-    width: 90%;
-    margin: 200px auto;
-    border-radius: 10px;
-}
+/* artikel, tutorial */
 
-.container a {
-    text-decoration: none;
+.container {
+    width: 80%;
+    margin: 150px auto;
 }
 
 .container hr {
     border-bottom: 1px solid black;
-    width: 180px;
+    width: 200px;
     margin-bottom: 50px;
 }
-
-.container .row {
-    display: flex;
+.container-iklan {
+    margin: 0 auto;
 }
 
-.container .row .card {
-    height: auto;
-    margin: 10px;
-    transition-property: transform;
-    transition: 0.3s;
+.container-sidebar {
+    margin: 0 auto;
+    width: 250px;
 }
 
-.container .row .card:hover {
-    transform: scale(1.025);
-}
 
-.card-title:hover {
-    color: rgb(95, 95, 255);
-}
-
-.card-text {
-    font-size: 14px;
-}
-
-.container .no-gutters img {
-    width: 100%;
-    height: 100%;
-} */
-
-/* akhir artikel */
-
-
-/* tutorial */
-
-
-
-/* Akhir tutorial */
+/* akhir artikel, tutorial*/
 
 
 /* footer */
@@ -153,6 +132,15 @@ footer {
         border: none;
     }
 
+    .container-sidebar {
+        width: 200px;
+        margin-top: 80px;
+    }
+
+    .container-sidebar .card-title {
+        font-size: 13px;
+    }
+
 }
 
 @media (max-width: 576px) {
@@ -162,6 +150,10 @@ footer {
 
     .row .card {
         margin-right: 0;
+    }
+
+    .container-sidebar {
+        width: 300px;
     }
 
     
