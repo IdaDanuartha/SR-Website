@@ -176,9 +176,13 @@ footer {
         margin-top: 80px;
     }
 
-    
+    .container button {
+        margin: 10px 38% 60px;
+        
+    }
 
 }
+
 
 @media (max-width: 576px) {
     h1 {
@@ -191,6 +195,11 @@ footer {
 
     .container-sidebar {
         width: 300px;
+    }
+
+    .container button {
+        margin: 10px 32% 50px;
+        
     }
 
     
