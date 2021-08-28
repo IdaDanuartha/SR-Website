@@ -57,6 +57,16 @@ body {
     margin: 150px auto;
 }
 
+.container a {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+.container a .col-sm-12:hover {
+    transform: scale(1.02);
+}
+
 .container p {
     font-size: 11px;
 }
@@ -73,8 +83,12 @@ body {
 }
 .container-iklan {
     margin: 0 auto;
+    transition: 0.2s;
 }
 
+.container-iklan:active {
+    transform: scale(1.05);
+}
 .container-sidebar {
     margin: 0 auto;
     width: 250px;
