@@ -13,23 +13,22 @@ body {
 
 /* navbar */
 
- .navbar {
+.navbar {
     width: 100%;
     z-index: 2;
     padding-left: 30px;
 }
 
-.navbar .nav-item {
-    padding-right: 10px;
+.navbar .navbar-brand {
+    transition: 0.4s;
 }
 
-.navbar .nav-item:hover::after {
-    content: '';
-    display: block;
-    border-bottom: 2px solid #0b63DC;
-    color: rgb(231, 231, 231);
-    width: 30%;
-    margin: auto;
+.navbar .navbar-brand:hover {
+    transform: scale(1.2);
+}
+
+.navbar .nav-item {
+    padding-right: 10px;
 }
 
 .navbar .form-inline .form-control {
@@ -128,6 +127,16 @@ iframe {
 
 /* akhir contact */
 
+/* about */
+
+.container-about {
+    width: 80%;
+    margin: 120px auto 100px auto;
+    border-radius: 10px;
+}
+
+/* akhir about */
+
 /* footer */
 footer {
     color: white;
@@ -150,6 +159,18 @@ footer {
     color: white;
 }
 
+.bottom-navbar .bottom-navbar-home {
+    color: rgb(160, 157, 157);
+}
+
+.bottom-navbar .bottom-navbar-contact {
+    color: rgb(160, 157, 157);
+}
+
+.bottom-navbar .bottom-navbar-about {
+    color: rgb(160, 157, 157);
+}
+
 .bottom-navbar a:hover {
     color: rgb(160, 157, 157);
 }
@@ -159,6 +180,15 @@ footer {
 
 .sosmed {
     padding: 40px;
+}
+
+.sosmed i {
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+.sosmed i:hover {
+    transform: scale(1.5);
 }
 
 .copyright {
