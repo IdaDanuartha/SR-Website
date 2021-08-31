@@ -49,7 +49,7 @@ body {
 /* akhir carousel */
 
 
-/* artikel, tutorial */
+/* menu artikel, tutorial */
 
 .container {
     width: 80%;
@@ -102,7 +102,45 @@ iframe {
     width: 100%;
     height: auto;
 }
-/* akhir artikel, tutorial*/
+/* akhir menu artikel, tutorial*/
+
+/* Style Artikel dan Tutorial */
+.navbar-artikel {
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.artikel {
+    width: 100%;
+    height: 1000px;
+}
+
+.artikel .container-artikel {
+    width: 90%;
+    height: 1000px;
+    margin: 120px auto;
+}
+
+.artikel .artikel-utama {
+    width: 65%;
+    height: 100px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    padding: 20px;
+}
+
+.artikel .sidebar-artikel {
+    width: 30%;
+    height: 100px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    padding: 15px;
+}
+
+/* Akhir Style Artikel dan Tutorial */
 
 /* contact */
 .container-contact {
@@ -165,21 +203,14 @@ footer {
     color: white;
 }
 
-.bottom-navbar .bottom-navbar-home {
-    color: rgb(160, 157, 157);
-}
-
-.bottom-navbar .bottom-navbar-contact {
-    color: rgb(160, 157, 157);
-}
-
-.bottom-navbar .bottom-navbar-about {
+.bottom-navbar .bottom-navbar-home, .bottom-navbar-about, .bottom-navbar-contact {
     color: rgb(160, 157, 157);
 }
 
 .bottom-navbar a:hover {
     color: rgb(160, 157, 157);
 }
+
 .sosmed a {
     text-decoration: none;
 }
@@ -189,14 +220,31 @@ footer {
 }
 
 .sosmed i {
-    font-size: 22px;
-    transition: 0.3s;
+    font-size: 25px;
+    transition: 0.2s;
+    padding: 5px;
+    border-radius: 50%;
 }
 
 .sosmed i:hover {
-    transform: scale(1.5);
+    background-color: white;
 }
 
+.sosmed .fa-youtube:hover {
+    color: red;
+}
+
+.sosmed .fa-instagram:hover {
+    color: rgb(177, 27, 177);
+}
+
+.sosmed .fa-tiktok:hover {
+    color: rgb(0, 0, 0);
+}
+
+.sosmed .fa-github:hover {
+    color: rgb(0, 0, 0);
+}
 .copyright {
     padding: 5px;
     background-color: #222;
