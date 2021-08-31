@@ -131,8 +131,14 @@ iframe {
 
 .container-about {
     width: 80%;
-    margin: 120px auto 100px auto;
+    margin: 120px auto 100px;
     border-radius: 10px;
+}
+
+.container-about .row img {
+    width: 200px;
+    height: auto;
+    margin: 30px 40%;
 }
 
 /* akhir about */
@@ -225,6 +231,9 @@ footer {
         
     }
 
+    .container-about .row img {
+        margin: 30px 35%;
+    }
 }
 
 
@@ -246,5 +255,12 @@ footer {
         
     }
 
-    
+    .container-about {
+        width: 90%;
+    }
+
+    .container-about .row img {
+        width: 150px;
+        margin: 30px 25%;
+    }
 }
