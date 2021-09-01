@@ -154,9 +154,9 @@ iframe {
 }
 
 .artikel .container-artikel .gambar-artikel {
-    width: 70%;
+    width: 60%;
     height: auto;
-    margin: 50px 15%;
+    margin: 50px 18%;
 }
 
 .container-iklan .col-sm-12 a:nth-child(2) {
@@ -370,7 +370,7 @@ footer {
     }
 
     .artikel .container-artikel .artikel-utama p {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .contact .container-contact {
