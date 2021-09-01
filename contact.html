@@ -54,7 +54,7 @@
               🏆 Kompetisi
               </a>
               <div class="dropdown-menu position-absolute" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Online Comp</a>
+                <a class="dropdown-item" href="#">Online Competition</a>
                 <a class="dropdown-item" href="#">Result</a>
               </div>
             </li>
@@ -72,11 +72,11 @@
      <!-- Akhir Navbar -->
 
     <section id="contact" class="contact">
-        <div class="container-contact text-white bg-dark p-4">
+        <div class="container-contact text-white p-4">
             <h1 class="text-center">Contact</h1>
             <hr class="mb-4" style="border-bottom: 1px solid white;">
             <div class="card text-dark bg-info m-auto" style="width: 18rem;">
-                <div class="card-header h5">
+                <div class="card-header h5 text-center">
                   Contact me!
                 </div>
                 <ul class="list-group list-group-flush text-left">
@@ -84,29 +84,43 @@
                   <li class="list-group-item"><a href="https://www.instagram.com/danuartha_1418/">@danuartha_1418</a></li>
                   <li class="list-group-item">sucitadanuarthabali12@gmail.com</li>
                 </ul>
-              </div>
-              <hr>
+              </div><br><br>
 
-            <p>Saya admin Seputar Rubik mohon maaf karena form contact masih belum bisa digunakan.</p><br>
-            <p>Silahkan isi form contact berikut untuk memberi masukkan / saran terhadap website saya atau mungkin anda mau mengajukan kerjasama dengan saya.</p>
+            <p>Silahkan isi form contact dibawah untuk memberi masukkan / saran terhadap website saya atau mungkin anda mau mengajukan kerjasama dengan saya.</p>
             <hr class="mt-4" style="border-bottom: 1px solid white;">
 
             <h4 class="text-center mt-5">Form contact</h4>
-            <div class="mb-3 mt-3">
-                <label for="exampleFormControlInput1" class="form-label">Nama</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Masukkan nama anda">
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Masukkan alamat email">
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Pesan</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Masukkan pesan anda disini"></textarea>
-              </div>
-              <div class="col-12 mt-4">
-                <button type="submit" class="btn btn-primary">Kirim!</button>
-              </div>
+            <div class="alert alert-success alert-dismissible fade show d-none alert-contact" role="alert">
+              <strong>Terima Kasih!</strong> Pesan anda sudah masuk.
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <form name="submit-to-google-sheet" action="">
+              <div class="mb-3 mt-3">
+                  <label for="Nama" class="form-label">Nama</label>
+                  <input type="text" class="form-control" id="Nama" placeholder="Masukkan nama anda" name="Nama" required>
+                </div>
+                <div class="mb-3">
+                  <label for="Email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="Email" placeholder="Masukkan alamat email" name="Email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="Instagram" class="form-label">Instagram (optional)</label>
+                  <input type="text" class="form-control" id="Instagram" placeholder="Masukkan nama pengguna" name="Instagram">
+                </div>
+                <div class="mb-3">
+                  <label for="Pesan" class="form-label">Pesan</label>
+                  <textarea class="form-control" id="Pesan" rows="3" placeholder="Masukkan pesan anda disini" name="Pesan" required></textarea>
+                </div>
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn btn-success contact-kirim">Kirim!</button>
+                  <button class="btn btn-success d-none spinner-loading" type="button" disabled>
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    Loading...
+                  </button>
+                </div>
+            </form>
         </div>
     </section>
 

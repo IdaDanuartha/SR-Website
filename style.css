@@ -170,6 +170,7 @@ iframe {
     width: 80%;
     margin: 120px auto 100px auto;
     border-radius: 10px;
+    background-color: #333;
 }
 
 .navbar-contact {
