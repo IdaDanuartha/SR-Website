@@ -122,6 +122,10 @@ iframe {
     margin: 120px auto;
 }
 
+.container-artikel .card-body h5:hover {
+    color: rgb(78, 78, 243);
+}
+
 .container-artikel .my-profile {
     margin: 12px 3px 30px 5px;
 }
@@ -146,6 +150,12 @@ iframe {
     border-radius: 10px;
     box-shadow: 1px 1px 5px black;
     padding: 15px;
+}
+
+.artikel .container-artikel .gambar-artikel {
+    width: 70%;
+    height: auto;
+    margin: 50px 15%;
 }
 
 /* Akhir Style Artikel dan Tutorial */
@@ -229,7 +239,7 @@ footer {
 
 .sosmed i {
     font-size: 25px;
-    transition: 0.2s;
+    transition: 0.4s;
     padding: 5px;
     border-radius: 50%;
 }
@@ -243,7 +253,7 @@ footer {
 }
 
 .sosmed .fa-instagram:hover {
-    color: rgb(177, 27, 177);
+    color: rgb(143, 20, 143);
 }
 
 .sosmed .fa-tiktok:hover {
