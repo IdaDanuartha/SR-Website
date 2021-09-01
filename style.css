@@ -187,6 +187,7 @@ iframe {
     font-size: 13px;
 }
 
+
 /* akhir contact */
 
 /* about */
@@ -325,6 +326,10 @@ footer {
         margin: 0 auto 100px;
         width: 85%;
     }
+
+    .contact .container-contact {
+        width: 85%;
+    }
 }
 
 
@@ -366,6 +371,10 @@ footer {
 
     .artikel .container-artikel .artikel-utama p {
         font-size: 12px;
+    }
+
+    .contact .container-contact {
+        width: 95%;
     }
 
     footer {
