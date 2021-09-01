@@ -120,6 +120,7 @@ iframe {
     width: 90%;
     height: auto;
     margin: 120px auto;
+    display: flex;
 }
 
 .container-artikel .card-body h5:hover {
@@ -156,6 +157,10 @@ iframe {
     width: 70%;
     height: auto;
     margin: 50px 15%;
+}
+
+.container-iklan .col-sm-12 a:nth-child(2) {
+    display: none;
 }
 
 /* Akhir Style Artikel dan Tutorial */
@@ -297,13 +302,36 @@ footer {
         
     }
 
+    .container-iklan .col-sm-12 a:first-child {
+        display: none;
+    }
+
+    .container-iklan .col-sm-12 a:nth-child(2) {
+        display: block;
+    }
+
     .container-about .row img {
         margin: 30px 35%;
+    }
+
+    .artikel .container-artikel {
+        width: 100%;
+        margin: 120px 0;
+        display: block;
+    }
+
+    .artikel .container-artikel .artikel-utama {
+        margin: 0 auto 100px;
+        width: 85%;
     }
 }
 
 
 @media (max-width: 576px) {
+    .new-post {
+        font-size: 25px;
+    }
+
     h1 {
         font-size: 30px;
     }
@@ -328,5 +356,22 @@ footer {
     .container-about .row img {
         width: 150px;
         margin: 30px 25%;
+    }
+
+    .artikel .container-artikel .artikel-utama {
+        margin: 0 3% 100px;
+        width: 95%;
+    }
+
+    .artikel .container-artikel .artikel-utama p {
+        font-size: 12px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    footer .sosmed i {
+        font-size: 22px;
     }
 }
