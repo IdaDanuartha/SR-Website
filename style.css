@@ -162,6 +162,34 @@ iframe {
 
 /* Akhir Style Artikel dan Tutorial */
 
+/* Kompetisi */
+
+.header-kompetisi {
+    width: 100%;
+    margin: 65px auto;
+}
+
+.container-kompetisi {
+    width: 85%;
+    padding: 15px;
+    margin: 100px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+    display: flex;
+}
+
+.container-kompetisi .card-deck .card {
+    max-width: 18rem;
+    margin-bottom: 50px;
+}
+
+.container-kompetisi .col-sm-3 img:last-child {
+    display: none;
+}
+
+/* Akhir kompetisi */
+
 /* contact */
 .container-contact {
     width: 80%;
@@ -341,6 +369,18 @@ footer {
     .contact .container-contact {
         width: 85%;
     }
+
+    .container-kompetisi {
+        display: block;
+    }
+
+    .container-kompetisi .kompetisi-sidebar img:first-child {
+        display: none;
+    }
+
+    .container-kompetisi .kompetisi-sidebar img:last-child {
+        display: block;
+    }
 }
 
 
@@ -396,6 +436,14 @@ footer {
 
     .artikel .container-artikel li {
         font-size: 13px;
+    }
+
+    .container-kompetisi {
+        width: 95%;
+    }
+
+    .container-kompetisi h2 {
+        font-size: 20px;
     }
     .contact .container-contact {
         width: 95%;
