@@ -144,14 +144,6 @@ iframe {
     padding: 20px;
 }
 
-.artikel .sidebar-artikel .lihat-juga {
-    width: 100%;
-    height: auto;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px black;
-    padding: 15px;
-}
 
 .artikel .container-artikel .gambar-artikel {
     width: 60%;
@@ -162,6 +154,11 @@ iframe {
 .container-iklan .col-sm-12 a:nth-child(2) {
     display: none;
 }
+
+.container-artikel .sidebar-artikel a:last-child {
+    display: none;
+}
+
 
 /* Akhir Style Artikel dan Tutorial */
 
@@ -327,6 +324,20 @@ footer {
         width: 85%;
     }
 
+    .artikel .sidebar-artikel .iklan {
+        width: 85%;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+
+    .container-artikel .sidebar-artikel a:first-child {
+        display: none;
+    }
+
+    .container-artikel .sidebar-artikel a:last-child {
+        display: block;
+    }
+
     .contact .container-contact {
         width: 85%;
     }
@@ -369,10 +380,23 @@ footer {
         width: 95%;
     }
 
+    .artikel .lihat-juga {
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    .artikel .sidebar-artikel .iklan {
+        width: 90%;
+        margin: 0 auto;
+    }
+
     .artikel .container-artikel .artikel-utama p {
         font-size: 13px;
     }
 
+    .artikel .container-artikel li {
+        font-size: 13px;
+    }
     .contact .container-contact {
         width: 95%;
     }
