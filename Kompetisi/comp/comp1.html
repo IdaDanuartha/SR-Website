@@ -74,12 +74,81 @@
       <!-- Kompetisi -->
 
       <div class="online-competition-container">
-          <div class="header-comp online-comp"></div>
-          <div class="rules-comp online-comp"></div>
-          <div class="data-comp online-comp"></div>
-          <div class="main-comp online-comp"></div>
-          <button class="btn btn-success">Kirim</button>
-      </div>
+          <div class="header-comp online-comp">
+              <h1 class="text-center">SeRu Competition I</h1>
+              <hr class="mb-4">
+              <p>SeRu Competition I atau Seputar Rubik Competition I adalah kompetisi yang dibuat dalam rangka uji coba membuat website yang lagi saya kembangkan dan mohon maaf kompetisi ini tidak ada hadiah ataupun sertifikat.</p>
+          </div>
+
+          <div class="rules-comp online-comp">
+              <h3 class="text-center">Rules / Peraturan</h3>
+              <hr class="mb-4">
+              <ol>
+                  <li>Kompetisi ini akan berlangsung dari tanggal 10 - 15 September 2021.</li>
+                  <li>Event yang akan dipertandingkan adalah event 2x2 dan 3x3.</li>
+                  <li>Kompetisi ini tidak ada ronde final.</li>
+                  <li>Kompetisi ini tidak dikenakan biaya (free).</li>
+                  <li>Kompetisi ini tidak ada hadiah atau sertifikat, dikarenakan ini masih tahap uji coba.</li>
+                  <li>Tidak ada batasan umur ataupun kecepatan.</li>
+                  <li>Result / Hasil pertandingan akan diumumkan di Bagian menu Kompetisi => Result pada tanggal 16 September 2021.</li>
+                  <li>Semua peserta boleh merekam solvenya ataupun tidak.</li>
+                  <li>Jika peserta ingin merekam solvenya bisa kasih #serucomp di deskripsi video.</li>
+                  <li>Dalam scramble / mengacak rubik, posisinya Hijau didepan dan putih diatas.</li>
+                  <li>Diharapkan dalam mengisi data diri tidak menggunakan nama samaran / palsu.</li>
+                  <li>Format dalam mengisi hasil untuk event 2x2 dan 3x3 : (Solve 1), (Solve 2), (Solve 3), (Solve 4), (Solve 5) = Ao5.</li>
+              </ol>
+          </div>
+
+          <div class="data-comp online-comp">
+              <h3 class="text-center">Form Data Diri</h3>
+              <hr class="mb-4">
+              <form name="seru-comp-result" method="POST">
+                    <div class="form-group">
+                      <label for="nama">Nama</label>
+                      <input type="text" class="form-control" id="nama" name="Nama" placeholder="Nama anda" required>  
+                    </div>
+
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" id="email" name="Email" placeholder="Email anda" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="instagram">Instagram (Optional)</label>
+                        <input type="text" class="form-control" id="instagram" name="Instagram" placeholder="Instagram anda">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="youtube">Channel Youtube (Optional)</label>
+                        <input type="text" class="form-control" id="youtube" name="Youtube" placeholder="Channel youtube anda">
+                    </div>
+                </div>
+
+                <div class="main-comp online-comp">
+                    <h3 class="text-center">Form Input Solve</h3>
+                    <hr class="mb-4">
+
+                    <img src="img/Comp1(2x2).jpg" alt="Scramble 2x2" width="70%">
+                    <div class="form-group">
+                        <label for="2x2" style="font-size: 23px;">2x2</label>
+                        <input type="text" class="form-control" id="2x2" name="2x2" placeholder="(Solve 1), (Solve 2), (Solve 3), (Solve 4), (Solve 5) = Ao5">
+                    </div>
+                    
+                    <img src="img/Comp1(3x3).jpg" alt="Scramble 3x3" width="70%">
+                    <div class="form-group">
+                        <label for="3x3" style="font-size: 23px;">3x3</label>
+                        <input type="text" class="form-control" id="3x3" name="3x3" placeholder="(Solve 1), (Solve 2), (Solve 3), (Solve 4), (Solve 5) = Ao5">
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn btn-success comp-submit" style="width: 90px;">Kirim</button>
+                <button class="btn btn-success d-none comp-spinner" type="button" disabled>
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    Loading...
+                  </button>
+            </form>
+          </div>
+
 
       <!-- Akhir kompetisi -->
 
@@ -125,5 +194,30 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
     -->
 
+    <script>
+        // untuk menghubungkan form Kompetisi dengan google spreadsheet
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwhu_rNy0unonYqGQ2lw5suZcP4sKdShmaOD-g-30V3cB7UbAqEC9ZTgsriH2DxBMYo/exec'
+        const form = document.forms['seru-comp-result']
+        const btnKirim = document.querySelector('.comp-submit');
+        const btnSpinner = document.querySelector('.comp-spinner');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            btnKirim.classList.toggle('d-none');
+            btnSpinner.classList.toggle('d-none');
+
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                btnKirim.classList.toggle('d-none');
+                btnSpinner.classList.toggle('d-none');
+                form.reset();
+                window.location = 'https://idadanuartha.github.io/SR-Website.github.io/Kompetisi/result/result.html';
+
+                console.log('Success!', response)
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+
+    </script>
 </body>
 </html>
