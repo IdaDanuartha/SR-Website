@@ -101,18 +101,22 @@ body {
     width: 200px;
     margin-bottom: 50px;
 }
-.container-iklan {
-    margin: 0 auto;
-    transition: 0.2s;
+
+.container-sidebar .card-group .card-body .card {
+    transition: 0.3s;
 }
 
-.container-iklan:active {
-    transform: scale(1.05);
+.container-sidebar .card-group .card-body .card p:hover {
+    color: rgb(83, 83, 255);
+}
+
+.container-sidebar .card-group .card-body .card:hover {
+    transform: scale(1.04);
 }
 
 .container-sidebar {
     margin: 0 auto;
-    width: 230px;
+    width: 240px;
 }
 
 .container button {
