@@ -48,6 +48,23 @@ body {
 
 /* akhir carousel */
 
+.new-post {
+    padding: 10px;
+    color: white;
+    font-weight: 650;
+    text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
 
 /* menu artikel, tutorial */
 
@@ -100,7 +117,7 @@ body {
 
 .container button {
     margin: 10px 40%;
-    
+    width: 100px;
 }
 
 iframe {
@@ -174,6 +191,13 @@ iframe {
     margin: 65px auto;
 }
 
+.header-kompetisi h1 {
+   color: #333;
+   font-weight: 600;
+   text-transform: uppercase;
+   text-shadow: 0 0 10px white;
+}
+
 .container-kompetisi {
     width: 85%;
     padding: 15px;
@@ -186,6 +210,22 @@ iframe {
 
 .container-kompetisi .kompetisi-utama {
     width: 70%;
+}
+
+.kompetisi-sidebar a{
+    text-decoration: none;
+}
+
+.kompetisi-sidebar .card-body .card {
+    transition: transform 0.4s;
+}
+
+.kompetisi-sidebar .card-body .card p:hover {
+    color: rgb(140, 166, 250);
+}
+
+.kompetisi-sidebar .card-body .card:hover {
+    transform: scale(1.04);
 }
 
 .container-kompetisi .col-sm-3 img:last-child {
@@ -204,10 +244,6 @@ iframe {
     background-color: rgb(255, 255, 255);
     border-radius: 12px;
     box-shadow: 1px 1px 10px rgb(44, 44, 44);
-}
-
-.online-comp hr {
-    width: 400px;
 }
 
 .online-comp h1, h3 {
@@ -240,6 +276,7 @@ iframe {
 
 .main-comp img {
     margin: 0 13%;
+    width: 70%;
 }
 
 .main-comp .form-group .form-control {
@@ -247,7 +284,7 @@ iframe {
     border-width: 0 0 1px 0;
     border-color: black;
     box-shadow: none;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .main-comp .form-group .form-control:focus {
@@ -456,6 +493,11 @@ footer {
     .container-kompetisi .kompetisi-sidebar img:last-child {
         display: block;
     }
+
+    .online-competition-container {
+        font-size: 0.9em;
+        width: 85%;
+    }
 }
 
 
@@ -524,6 +566,25 @@ footer {
 
     .container-kompetisi {
         width: 95%;
+    }
+
+    .online-competition-container {
+        font-size: 0.8em;
+        width: 93%;
+    }
+
+    .online-competition-container h1, h3 {
+        font-size: 1.6em;
+        font-weight: 500;
+    }
+
+    .online-comp input {
+        font-size: 13px;
+    }
+
+    .main-comp img {
+        margin: 0 5%;
+        width: 90%;
     }
 
     .container-kompetisi h2 {
