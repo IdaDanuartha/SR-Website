@@ -237,6 +237,12 @@ iframe {
     margin: 120px auto 150px;
 }
 
+.online-competition-container #header-comp {
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+    border-top: 7px solid rgba(0, 0, 255, 0.8);
+}
+
 .online-competition-container .online-comp {
     width: 100%;
     padding: 20px;
@@ -266,7 +272,7 @@ iframe {
 }
 
 .data-comp .form-group .form-control:focus {
-    border-bottom: 2px solid rgb(3, 3, 214);
+    border-bottom: 2px solid rgb(4, 4, 255);
 }
 
 .main-comp .form-group {
@@ -288,7 +294,7 @@ iframe {
 }
 
 .main-comp .form-group .form-control:focus {
-    border-bottom: 2px solid rgb(2, 2, 148);
+    border-bottom: 2px solid rgb(4, 4, 255);
 }
 
 
