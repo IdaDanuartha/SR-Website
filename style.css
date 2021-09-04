@@ -300,6 +300,38 @@ iframe {
 
 /* Akhir kompetisi */
 
+/* result */
+
+.result-container {
+    width: 70%;
+    margin: 120px auto;
+    font-size: 0.9em;
+}
+
+.result-container table {
+    margin-bottom: 130px;
+}
+.result-container .thead-dark {
+    font-size: 20px;
+}
+
+.result-container table th {
+    text-align: center;
+}
+
+.result-container table tbody .rank-1 {
+    background-color: rgb(236, 201, 0);
+}
+
+.result-container table tbody .rank-2 {
+    background-color: silver;
+}
+
+.result-container table tbody .rank-3 {
+    background-color: rgb(156, 85, 13);
+}
+
+/* akhir result */
 /* contact */
 .container-contact {
     width: 80%;
@@ -504,6 +536,15 @@ footer {
         font-size: 0.9em;
         width: 85%;
     }
+
+    .result-container {
+        width: 85%;
+        font-size: 0.8em;
+    }
+
+    .result-container .thead-dark {
+        font-size: 18px;
+    }
 }
 
 
@@ -596,6 +637,16 @@ footer {
     .container-kompetisi h2 {
         font-size: 23px;
     }
+
+    .result-container {
+        width: 95%;
+        font-size: 0.7em;
+    }
+
+    .result-container .thead-dark {
+        font-size: 14px;
+    }
+
     .contact .container-contact {
         width: 95%;
     }
