@@ -261,6 +261,16 @@ iframe {
     font-weight: 450;
 }
 
+.container-kompetisi .kompetisi-utama .row .col a {
+    text-decoration: none;
+    color: black;
+}
+
+.container-kompetisi .kompetisi-utama .row .col a:hover {
+    color: rgb(38, 38, 172);
+    transform: scale(1.04);
+}
+
 .data-comp .form-group {
     position: relative;
     margin: 40px 0;
