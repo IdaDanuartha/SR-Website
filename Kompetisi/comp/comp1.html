@@ -32,9 +32,9 @@
               <i class="far fa-newspaper"></i> Artikel
               </a>
               <div class="dropdown-menu position-absolute" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Rubik</a>
+                <a class="dropdown-item" href="../../Artikel/daftar-artikel/daftar-artikel-rubik.html">Rubik</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Lihat Selengkapnya</a>
+                <a class="dropdown-item" href="../../Artikel/daftar-artikel/artikel-selengkapnya.html">Lihat Selengkapnya</a>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -216,9 +216,9 @@
             .then(response => {
                 btnKirim.classList.toggle('d-none');
                 btnSpinner.classList.toggle('d-none');
-                window.location = 'https://idadanuartha.github.io/SR-Website.github.io/Kompetisi/comp/comp1-submit.html';
                 form.reset();
-
+                window.location = 'https://idadanuartha.github.io/SR-Website.github.io/Kompetisi/comp/comp1-submit.html';
+    
                 console.log('Success!', response)
             })
             .catch(error => console.error('Error!', error.message))
