@@ -11,6 +11,7 @@ body {
     background-color: rgb(228, 229, 255);
 }
 
+
 /* navbar */
 
 .navbar {
@@ -666,10 +667,11 @@ footer {
     }
 
     footer {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     footer .sosmed i {
-        font-size: 22px;
+        font-size: 20px;
+        padding: 5px;
     }
 }
