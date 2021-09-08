@@ -323,6 +323,10 @@ iframe {
     font-size: 0.9em;
 }
 
+.result-container h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
 .result-container table {
     margin-bottom: 130px;
 }
@@ -335,7 +339,7 @@ iframe {
 }
 
 .result-container table tbody .rank-1 {
-    background-color: rgb(236, 201, 0);
+    background-color: rgb(221, 189, 10);
 }
 
 .result-container table tbody .rank-2 {
@@ -655,11 +659,15 @@ footer {
 
     .result-container {
         width: 95%;
-        font-size: 0.7em;
+        font-size: 0.6em;
     }
 
     .result-container .thead-dark {
         font-size: 14px;
+    }
+
+    .result-container h2 {
+        font-size: 22px;
     }
 
     .contact .container-contact {
