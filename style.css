@@ -350,6 +350,10 @@ iframe {
     background-color: rgb(218, 116, 15);
 }
 
+.result-container table a {
+    color: black;
+}
+
 /* akhir result */
 /* contact */
 .container-contact {
