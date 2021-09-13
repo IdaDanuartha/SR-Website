@@ -1,4 +1,4 @@
-# SR-Website.github.io
+# SR-Website
 repository for my project website
 
 [Kunjungi Website Saya](https://idadanuartha.github.io/SR-Website/landingPage.html)
